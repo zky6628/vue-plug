@@ -1,0 +1,63 @@
+[
+    {
+        "path": "/",
+        "name": "dashboard",
+        "meta": {
+            "title": "首页"
+        },
+        "redirect": "/dashboard/analysis",
+        "children": [
+            {
+                "path": "/dashboard/analysis",
+                "name": "dashboard-analysis",
+                "redirect": null,
+                "meta": {
+                    "title": "首页",
+                    "icon": "home",
+                    "keepAlive": false
+                }
+            },
+            {
+                "path": "/Notice",
+                "name": "Notice",
+                "redirect": null,
+                "meta": {
+                    "title": "通知公告",
+                    "icon": "notification",
+                    "keepAlive": false
+                },
+                "children": [
+                    {
+                        "path": "/Notice/Administration",
+                        "name": "Notice-Administration",
+                        "meta": {
+                            "title": "通知公告管理",
+                            "keepAlive": false
+                        }
+                    },
+                    {
+                        "path": "/Notice/public",
+                        "name": "Notice-public",
+                        "meta": {
+                            "title": "通知公告",
+                            "keepAlive": false
+                        }
+                    },
+                    {
+                        "path": "/Notice/deleteLog",
+                        "name": "Notice-deleteLog",
+                        "meta": {
+                            "title": "删除日志",
+                            "keepAlive": false
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "*",
+        "redirect": "/404",
+        "hidden": true
+    }
+]

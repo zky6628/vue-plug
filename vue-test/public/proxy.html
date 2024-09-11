@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Proxy</h1>
+    <h2 id="proxy"></h2>
+    <input placeholder="请输入" onkeyup="msgChange(this)" />
+    <input placeholder="请输入" onkeyup="numChange(this)" />
+    <script>
+        let data = {
+            msg: '',
+            num: 0,
+        }
+        // Proxy 会监控所有的属性
+        let vm = new Proxy(data, {
+            get(target, key) {
+                console.log(target, key)
+                return target[key]
+            },
+            set(target, key, newVal) {
+                if (newVal === target[key]) return true
+
+                target[key] = newVal
+                document.querySelector('#proxy').innerHTML = newVal
+                return true
+            }
+        })
+
+        function msgChange(e) { 
+            vm.msg = e.value 
+        }
+        function numChange(e) { 
+            vm.num = e.value 
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitee.com/zhanghuanmj/lib.git",
+  "author": "zhanghuanmj <1120410457@qq.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>椭圆形</title>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分类图标">
+            <circle id="椭圆形" fill="#7AA377" cx="12" cy="12" r="12"></circle>
+            <g id="符号-图层" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <path d="M8,2.145 L3.0155,4.924 L8,7.8415 L12.9845,4.924 L8,2.145 Z M8,1 L15,4.903 L8,9 L1,4.903 L8,1 Z M14.125,7.415 L15,7.903 L8,12 L1,7.903 L1.875,7.415 L8,11 L14.125,7.415 Z M14.125,10.415 L15,10.903 L8,15 L1,10.903 L1.875,10.415 L8,14 L14.125,10.415 Z" id="形状" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
